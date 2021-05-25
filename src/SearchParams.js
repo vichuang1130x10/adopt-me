@@ -7,8 +7,8 @@ const ANIMALS = ["bird", "cat", "dog", "rabbit", "reptile"];
 
 const SearchParams = () => {
   const [location, setLocation] = useState("");
-  const [animalProps, resetAnimal] = useSelect("");
-  const [breedProps, resetBreed] = useSelect("");
+  const [animalProps] = useSelect("");
+  const [breedProps] = useSelect("");
   const [breeds] = useBreedList(animalProps.value);
   const [pets, setPets] = useState([]);
 
